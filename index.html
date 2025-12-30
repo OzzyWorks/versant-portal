@@ -3,261 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VERSANT-Placement テスト練習システム</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Versant学習ポータル | 楽しくスコアアップを目指そう</title>
+    <!-- Tailwind CSS (CDN版) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f9ff;
+        }
+    </style>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-headphones-alt"></i>
-                    <span>VERSANT Practice</span>
-                </div>
-                <nav class="nav">
-                    <a href="#home" class="nav-link">ホーム</a>
-                    <a href="#about" class="nav-link">練習について</a>
-                    <a href="#parts" class="nav-link">パート一覧</a>
-                </nav>
-            </div>
+<body class="text-gray-700 flex flex-col min-h-screen">
+
+    <!-- ヘッダーエリア -->
+    <header class="bg-gradient-to-r from-sky-400 to-blue-500 text-white py-16 px-6 text-center shadow-md">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+                Versant 対策ポータル
+            </h1>
+            <p class="text-lg md:text-xl text-sky-50 font-medium leading-relaxed">
+                目標スコアに向かって、楽しく学習を始めましょう。<br class="md:hidden">あなたにぴったりのコースを選んでください。
+            </p>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
+    <!-- メインコンテンツ -->
+    <main class="max-w-5xl mx-auto py-14 px-6 flex-grow w-full">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-3">テストの種類を選んでください</h2>
+            <p class="text-gray-600">受験予定のテストタイプを選択して、専用アプリでトレーニングしましょう。</p>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-main">VERSANT-Placement</span>
-                    <span class="title-sub">テスト練習システム</span>
-                </h1>
-                <p class="hero-description">
-                    パート別の徹底練習で、あなたの英語スピーキング力を向上させましょう。<br>
-                    実践的なトレーニングで、テストの準備を万全に。
-                </p>
-                <a href="#parts" class="hero-button">
-                    <span>練習を始める</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">VERSANTテストとは</h2>
-                <p class="section-description">
-                    VERSANTは、英語のスピーキング力を測定する国際的な評価テストです。<br>
-                    実践的なコミュニケーション能力を短時間で正確に測定できます。
-                </p>
-            </div>
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-stopwatch"></i>
-                    </div>
-                    <h3 class="feature-title">効率的な学習</h3>
-                    <p class="feature-description">
-                        パート別に集中して練習することで、効率的にスキルアップ
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="feature-title">実践的なトレーニング</h3>
-                    <p class="feature-description">
-                        実際のテスト形式に沿った練習で、本番に備えられる
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3 class="feature-title">スコアアップ</h3>
-                    <p class="feature-description">
-                        継続的な練習で確実にスコアを向上させる
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- カードグリッド (lg:grid-cols-3 から lg:grid-cols-2 に変更して2列x2行で見やすくするか、4つ並べるためにxl:grid-cols-4にするなど調整可能です。ここではとりあえずそのまま追加します) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
 
-    <!-- Parts Section -->
-    <section id="parts" class="parts">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">パート別練習システム</h2>
-                <p class="section-description">
-                    各パートをクリックして、専用の練習システムで学習を始めましょう
-                </p>
-            </div>
-            <div class="parts-grid">
-                <!-- Part B -->
-                <div class="part-card">
-                    <div class="part-badge">Part B</div>
-                    <div class="part-illustration">
-                        <div class="illustration-circle">
-                            <i class="fas fa-microphone-alt"></i>
-                        </div>
+            <!-- Type A カード (新規追加) -->
+            <div class="bg-white rounded-2xl shadow-sm border-2 border-orange-200 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-gray-800">Type A</h3>
+                        <span class="bg-green-100 text-green-600 text-xs font-bold px-3 py-1 rounded-full">リーディング</span>
                     </div>
-                    <h3 class="part-title">リピート</h3>
-                    <p class="part-description">
-                        聞こえた英文をそのまま発音する練習です。リスニング力と発音の正確さを向上させます。
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                        画面に表示された短い英文を音声指示に従って「音読（Reading）」するパート
                     </p>
-                    <ul class="part-skills">
-                        <li><i class="fas fa-check"></i> リスニング力</li>
-                        <li><i class="fas fa-check"></i> 発音の正確さ</li>
-                        <li><i class="fas fa-check"></i> 記憶力</li>
-                    </ul>
-                    <a href="https://versant-typeb-practice.pages.dev/" target="_blank" rel="noopener noreferrer" class="part-button">
-                        <span>練習を始める</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
                 </div>
-
-                <!-- Part C -->
-                <div class="part-card featured">
-                    <div class="part-badge">Part C</div>
-                    <div class="part-illustration">
-                        <div class="illustration-circle">
-                            <i class="fas fa-sort"></i>
-                        </div>
-                    </div>
-                    <h3 class="part-title">文章構築</h3>
-                    <p class="part-description">
-                        並べ替えられた文を正しい順序に直して発音します。文法力と論理的思考を鍛えます。
-                    </p>
-                    <ul class="part-skills">
-                        <li><i class="fas fa-check"></i> 文法力</li>
-                        <li><i class="fas fa-check"></i> 論理的思考</li>
-                        <li><i class="fas fa-check"></i> 語順の理解</li>
-                    </ul>
-                    <a href="https://versant-typec-practice.pages.dev/" target="_blank" rel="noopener noreferrer" class="part-button">
-                        <span>練習を始める</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-                <!-- Part D -->
-                <div class="part-card">
-                    <div class="part-badge">Part D</div>
-                    <div class="part-illustration">
-                        <div class="illustration-circle">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                    </div>
-                    <h3 class="part-title">会話理解</h3>
-                    <p class="part-description">
-                        2人の会話を聞いて質問に答えます。リスニング力と理解力を総合的に向上させます。
-                    </p>
-                    <ul class="part-skills">
-                        <li><i class="fas fa-check"></i> 会話理解力</li>
-                        <li><i class="fas fa-check"></i> 即答力</li>
-                        <li><i class="fas fa-check"></i> 文脈把握力</li>
-                    </ul>
-                    <a href="https://versant-typed-practice.pages.dev/" target="_blank" rel="noopener noreferrer" class="part-button">
-                        <span>練習を始める</span>
-                        <i class="fas fa-external-link-alt"></i>
+                <div class="px-6 pb-6">
+                    <a href="https://versant-typea-practice.pages.dev/" target="_blank" class="block w-full text-center text-white bg-orange-500 hover:bg-orange-600 font-bold py-3 px-4 rounded-full transition-all duration-300 hover:scale-105 flex items-center justify-center shadow-sm hover:shadow">
+                        Type A の学習をスタート
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Study Tips Section -->
-    <section class="tips">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">効果的な学習のコツ</h2>
-            </div>
-            <div class="tips-grid">
-                <div class="tip-card">
-                    <div class="tip-number">1</div>
-                    <h3 class="tip-title">毎日継続する</h3>
-                    <p class="tip-description">短時間でも毎日練習することで、確実にスキルが向上します</p>
-                </div>
-                <div class="tip-card">
-                    <div class="tip-number">2</div>
-                    <h3 class="tip-title">苦手パートを集中的に</h3>
-                    <p class="tip-description">自分の弱点を把握し、重点的に練習しましょう</p>
-                </div>
-                <div class="tip-card">
-                    <div class="tip-number">3</div>
-                    <h3 class="tip-title">実践的な環境で</h3>
-                    <p class="tip-description">本番と同じ環境で練習することで、テストに慣れることができます</p>
-                </div>
-                <div class="tip-card">
-                    <div class="tip-number">4</div>
-                    <h3 class="tip-title">録音して確認</h3>
-                    <p class="tip-description">自分の発音を録音して聞き直すことで、改善点が見つかります</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">今すぐ練習を始めましょう</h2>
-                <p class="cta-description">
-                    継続的な練習で、あなたの英語スピーキング力を次のレベルへ
-                </p>
-                <a href="#parts" class="cta-button">
-                    <span>パート一覧を見る</span>
-                    <i class="fas fa-arrow-up"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-headphones-alt"></i>
-                        <span>VERSANT Practice</span>
+            <!-- Type B カード -->
+            <div class="bg-white rounded-2xl shadow-sm border-2 border-orange-200 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-gray-800">Type B</h3>
+                        <span class="bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">スピーキング</span>
                     </div>
-                    <p class="footer-description">
-                        効果的な練習で英語スピーキング力を向上
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                        職場ですぐに使える英会話力を身につけましょう。発音や流暢さを、実際の会話形式で楽しくトレーニングできます。
                     </p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">練習パート</h4>
-                        <ul class="footer-list">
-                            <li><a href="https://webapp-4t5.pages.dev/" target="_blank" rel="noopener noreferrer">Part B - リピート</a></li>
-                            <li><a href="https://versant-typec-practice.pages.dev/" target="_blank" rel="noopener noreferrer">Part C - 文章構築</a></li>
-                            <li><a href="https://84c26ea7.webapp-4t5.pages.dev/" target="_blank" rel="noopener noreferrer">Part D - 会話理解</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">リソース</h4>
-                        <ul class="footer-list">
-                            <li><a href="#about">VERSANTとは</a></li>
-                            <li><a href="#parts">パート一覧</a></li>
-                            <li><a href="#tips">学習のコツ</a></li>
-                        </ul>
-                    </div>
+                <div class="px-6 pb-6">
+                    <a href="https://webapp-4t5.pages.dev" target="_blank" class="block w-full text-center text-white bg-orange-500 hover:bg-orange-600 font-bold py-3 px-4 rounded-full transition-all duration-300 hover:scale-105 flex items-center justify-center shadow-sm hover:shadow">
+                        Type B の学習をスタート
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 VERSANT Practice System. All rights reserved.</p>
+
+            <!-- Type C カード -->
+            <div class="bg-white rounded-2xl shadow-sm border-2 border-orange-200 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-gray-800">Type C</h3>
+                        <span class="bg-blue-100 text-blue-600 text-xs font-bold px-3 py-1 rounded-full">ライティング</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                        ビジネスメールや文書作成のスキルを磨きましょう。タイピングから文章の要約まで、実践的な力がつきます。
+                    </p>
+                </div>
+                <div class="px-6 pb-6">
+                    <a href="https://versant-typec-practice.pages.dev/" target="_blank" class="block w-full text-center text-white bg-orange-500 hover:bg-orange-600 font-bold py-3 px-4 rounded-full transition-all duration-300 hover:scale-105 flex items-center justify-center shadow-sm hover:shadow">
+                        Type C の学習をスタート
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Type D カード -->
+            <div class="bg-white rounded-2xl shadow-sm border-2 border-orange-200 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-gray-800">Type D</h3>
+                        <span class="bg-purple-100 text-purple-600 text-xs font-bold px-3 py-1 rounded-full">4技能総合</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                        「話す・聞く・読む・書く」の4つの力をバランスよく鍛えましょう。総合的な英語力アップを目指す方に最適です。
+                    </p>
+                </div>
+                <div class="px-6 pb-6">
+                    <a href="#" target="_blank" class="block w-full text-center text-white bg-orange-500 hover:bg-orange-600 font-bold py-3 px-4 rounded-full transition-all duration-300 hover:scale-105 flex items-center justify-center shadow-sm hover:shadow">
+                        Type D にチャレンジ
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div> 
+        
+        <!-- 準備中セクション -->
+        <div class="mt-10 bg-gray-50 rounded-2xl border-2 border-gray-200 p-6 flex flex-col md:flex-row items-center justify-between opacity-80">
+            <div class="mb-4 md:mb-0">
+                 <div class="flex items-center space-x-3 mb-2">
+                    <h3 class="text-lg font-bold text-gray-600">その他のテストタイプ (E など)</h3>
+                    <span class="bg-gray-200 text-gray-500 text-xs font-bold px-3 py-1 rounded-full">Coming Soon</span>
+                </div>
+                <p class="text-gray-500 text-sm">
+                    現在、その他のテスト形式に対応した学習アプリを準備しています。公開までもうしばらくお待ちください。
+                </p>
+            </div>
+            <div>
+                <button disabled class="text-gray-400 bg-gray-200 font-bold py-3 px-6 rounded-full cursor-not-allowed flex items-center shadow-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    ただいま準備中
+                </button>
             </div>
         </div>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-white text-gray-500 py-6 text-center border-t border-gray-100 text-sm mt-auto">
+        <p>© 2024 Versant 学習ポータル</p>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
